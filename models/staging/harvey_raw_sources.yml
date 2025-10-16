@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: harvey_raw           # refers to the schema in your warehouse
+    schema: harvey_raw
+    description: "Raw data schema for Harvey take-home project."
+    tables:
+      - name: events
+        description: "Events data with event type, number of documents, and feedback score."
+      - name: firms
+        description: "Firms data with size and ARR."
+      - name: users
+        description: "User data with job titles."
